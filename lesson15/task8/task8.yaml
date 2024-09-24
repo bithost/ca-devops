@@ -1,0 +1,22 @@
+students:
+- age: 20
+  grade: A
+  name: John Doe
+  subjects:
+  - Mathematics
+  - Physics
+  - Chemistry
+- age: 19
+  grade: B
+  name: Jade Doe
+  subjects:
+  - History
+  - English
+  - Biology
+- age: 21
+  grade: C
+  name: Foo Bar
+  subjects:
+  - History
+  - Biology
+  - English

@@ -1,0 +1,10 @@
+{
+    "name": "nodejs-app",
+    "version": "1.0.0",
+    "description": "Node.js app using Docker secrets",
+    "main": "server.js",
+    "dependencies": {
+      "express": "^4.17.1"
+    }
+  }
+  

@@ -1,0 +1,1 @@
+# Write a program in a language of your choice that consumes JSON data from a file, manipulates the data In some (e,g., a value, adds a new field, deletes a field), and writes the data back to the file.

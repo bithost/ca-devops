@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  nginx:
+    image: nginx
+    ports:
+      - "83:80"
+    volumes:
+      - data:/config/log/nginx
+volumes:
+  data:
+    driver: local
+

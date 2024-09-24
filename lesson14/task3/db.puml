@@ -1,0 +1,24 @@
+@startuml
+entity "Books" as books {
+  + book_id : number <<PK>>
+  --
+  title : varchar
+  author_id : number <<FK>>
+  patron_id : number <<FK>>
+}
+
+entity "Authors" as authors {
+  + author_id : number <<PK>>
+  --
+  name : varchar
+}
+
+entity "Patrons" as patrons {
+  + patron_id : number <<PK>>
+  --
+  name : varchar
+}
+
+authors ||--o{ books : has
+patrons ||--o{ books : borrowed
+@enduml
