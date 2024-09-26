@@ -1,0 +1,15 @@
+services:
+  web:
+    build: .
+    ports:
+      - "5000"
+    # Removed the `depends_on` for web service
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - web  # NGINX depends on web to start after web instances are up
